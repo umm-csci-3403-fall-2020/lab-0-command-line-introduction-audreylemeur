@@ -11,7 +11,7 @@ grep -rlz "DELETE ME!" "$SCRATCH"/"$FILEBASE" | xargs rm -rf
 
 cd "$SCRATCH" || exit
 
-for f in ./*/*
+for f in ./"$FILEBASE"
 do
         BASE=$(basename "$f")
         mv "$f" "$FILEBASE"/cleaned_"$BASE"
