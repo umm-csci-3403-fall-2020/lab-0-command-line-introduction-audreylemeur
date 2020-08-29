@@ -18,7 +18,7 @@ do
 
 done
 
-tar -czf cleaned_"$1" "$SCRATCH"/"$FILEBASE"
+tar -czf cleaned_"$1" "$FILEBASE"
 mv cleaned_"$1" "$here"
 
 rm -r "$SCRATCH"
