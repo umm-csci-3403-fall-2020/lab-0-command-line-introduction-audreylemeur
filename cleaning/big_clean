@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-SCRATCH=$(mktemp -d)
-
-tar -xf big_dir.tgz --directory="$SCRATCH"
